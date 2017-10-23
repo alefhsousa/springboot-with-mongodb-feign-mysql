@@ -6,7 +6,7 @@
 Para realizar as configurações de JPA, não existe mais a necessidade de configurar um `@Bean` que disponibiliza um 
 LocalContainerEntityManagerFactory, basta apenas colocar as configurações no `application.properties` ou `application.yml`
 
-Caso tenha dúvidas do que é possível configurar através do arquivo de configuração aqui é um bom [spring-properties][caminho]
+Caso tenha dúvidas do que é possível configurar através do arquivo de configuração aqui é um bom [caminho][springproperties]
 
 
 ## Interagindo com a JPA
@@ -37,12 +37,12 @@ Para essa aplicação funcionar corretamente é necessário que esteja rodando o
 
 Caso esteja familiarizado com docker, é possível rodar esses dois bancos com os comando abaixo: 
 
-##mongodb
+## mongodb
 ```sh
   docker run -d --name mongo -p 27017:27017 mongo
   ```
 
-##mysql
+## mysql
 ```sh
   docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql
 ```
@@ -51,4 +51,4 @@ Caso esteja familiarizado com docker, é possível rodar esses dois bancos com o
 
 
 [postmon]: http://postmon.com.br/
-[spring-properties]:   https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+[springproperties]:   https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
